@@ -1,53 +1,13 @@
-#theme = "Dracula"
-
-[colors.primary]
-background = '#282a36'
-foreground = '#f8f8f2'
-
-
-[colors.normal]
-black =   '#000000'
-red =     '#ff5555'
-green =   '#50fa7b'
-yellow =  '#f1fa8c'
-blue =    '#6B5297'
-magenta = '#ff79c6'
-cyan =    '#8be9fd'
-white =   '#ffffff'
-
-
-
-[colors.bright]
-black =   '#575b70'
-red =     '#ff6e67'
-green =   '#5af78e'
-yellow =  '#f4f99d'
-blue =    '#b289fa'
-magenta = '#ff92d0'
-cyan =    '#9aedfe'
-white =   '#ffffff'
-
-
-#[colors.normal]
-#black = "#000000"
-#blue = "#caa9fa"
-#cyan = "#8be9fd"
-#green = "#50fa7b"
-#magenta = "#ff79c6"
-#red = "#ff5555"
-#white = "#bfbfbf"
-#yellow = "#f1fa8c"
-
-
 [cursor]
-style = {shape = "Underline", blinking = "Always"}
-vi_mode_style = {shape = "Underline", blinking = "Always"}
-thickness = 0.25
+#style = {shape = "Underline", blinking = "Always"}
+#vi_mode_style = {shape = "Underline,block,beam", blinking = "Always"}
+style = {shape = "block", blinking = "Always"}
+vi_mode_style = {shape = "block", blinking = "Always"}
+# thickness = 0.25
 
 [colors.cursor]
 cursor = "#FFFFFF"
 text = "#3B4252"
-
 
 [env]
 LANG = "en_US.UTF-8"
@@ -57,6 +17,21 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [font]
 size = 12
+
+# [font.bold]
+# family = "JetBrainsMono Nerd Font"
+# style = "Bold"
+# 
+# [font.bold_italic]
+# family = "JetBrainsMono Nerd Font"
+# style = "Bold Italic"
+# 
+# [font.italic]
+# family = "JetBrainsMono Nerd Font"
+# style = "Italic"
+# 
+# [font.normal]
+# family = "JetBrainsMono Nerd Font"
 
 [font.bold]
 family = "IosevkaTerm Nerd Font"
@@ -77,7 +52,11 @@ family = "IosevkaTerm Nerd Font"
 hide_when_typing = true
 
 [window.padding]
-x = 7
-y = 8
+x = 30 
+y = 10 
 
 [general]
+#theme = "Dracula"
+import = [
+    "~/.config/alacritty/themes/themes/gruber_darker.toml"
+]
