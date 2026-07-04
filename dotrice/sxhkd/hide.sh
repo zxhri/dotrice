@@ -7,3 +7,5 @@ if [ -z "$hidden" ]; then
 else
 	bspc node "$hidden" -g hidden=off
 fi
+
+
