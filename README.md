@@ -1,4 +1,4 @@
 # BSPWM
 My own BSPWM dotconfig file.
 
-![BSPWM](Image.png)
+![BSPWM](image.png)
